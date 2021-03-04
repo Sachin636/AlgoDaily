@@ -43,9 +43,30 @@ class Solution:
 
 #######  APPROACH 2 ##########
 ##############################
+
+## Follow Up ##
+
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
-        pass
+        pA = headA
+        pB = headB
+
+        while pA != pB:
+            pA = headB if pA is None else pA.next
+            pB = headA if pB is None else pB.next
+
+        return pA
+
+
+'''
+This is the above algorithm in disguise - one pointer is 
+essentially measuring the length of the longer list, 
+and the other is measuring the length of the shorter list, 
+and then placing the start pointer for the longer list. 
+Then both are stepping through the list together. 
+By seeing the solution in this way though, we can now implement
+it as a single loop.
+'''
 
 ##### End Approach 2 ##########
 ###############################
