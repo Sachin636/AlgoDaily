@@ -1,3 +1,7 @@
+Minimum Moves to Move a Box to Their Target Location
+
+<hr>
+
 Storekeeper is a game in which the player pushes boxes around in a warehouse trying to get them to target locations.
 
 The game is represented by a grid of size m x n, where each element is a wall, floor, or a box.
@@ -6,7 +10,7 @@ Your task is move the box 'B' to the target position 'T' under the following rul
 
 Player is represented by character 'S' and can move up, down, left, right in the grid if it is a floor (empy cell).
 Floor is represented by character '.' that means free cell to walk.
-Wall is represented by character '#' that means obstacle  (impossible to walk there). 
+Wall is represented by character '#' that means obstacle (impossible to walk there).
 There is only one box 'B' and one target cell 'T' in the grid.
 The box can be moved to an adjacent free cell by standing next to the box and then moving in the direction of the box. This is a push.
 The player cannot walk through the box.
